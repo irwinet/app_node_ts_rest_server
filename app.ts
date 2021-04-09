@@ -1,3 +1,9 @@
-export const nombre = 'Irwin';
+import dotenv from 'dotenv';
+import Server from './models/server';
 
-console.log(nombre);
+//Configurar Dotenv
+dotenv.config();
+
+const server = new Server();
+
+server.listen();
